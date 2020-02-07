@@ -90,6 +90,7 @@ const VideoWorkaround = ({ src }) => (
       muted
       autoplay
       loop
+      playsinline
       src="${src}"
     />
   ` }}
