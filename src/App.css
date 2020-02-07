@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'basier_squareregular';
+  src: url('/fonts/basiersquare-regular-webfont.eot');
+  src: url('/fonts/basiersquare-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/basiersquare-regular-webfont.woff2') format('woff2'),
+       url('/fonts/basiersquare-regular-webfont.woff') format('woff'),
+       url('/fonts/basiersquare-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background: rgb(237,221,252);
+  background: linear-gradient(25deg, rgba(237,221,252,0.9780287114845938) 0%, rgba(255,246,157,1) 100%);
+  font-family: 'basier_squareregular';
+  -webkit-font-smoothing: antialiased;
 }
