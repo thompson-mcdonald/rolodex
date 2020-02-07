@@ -120,7 +120,7 @@ class WorkBox extends React.Component {
               offsetX={5}
               offsetY={5}
             >
-              <Video loop muted autoPlay>
+              <Video loop autoPlay muted>
                 <source src={this.props.videourl}></source>
               </Video>
             </MouseToolTipBox>
