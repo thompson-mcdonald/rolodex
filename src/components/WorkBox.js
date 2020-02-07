@@ -133,9 +133,9 @@ class WorkBox extends React.Component {
               offsetY={5}
             >
             <Video>
-            <VideoWorkaround
-              src={this.props.videourl}
-            />
+              <VideoWorkaround
+                src={this.props.videourl}
+              />
             </Video>
             </MouseToolTipBox>
           </OuterBox>

@@ -92,6 +92,19 @@ const A = styled.a`
   }
 `;
 
+const VideoWorkaround = ({ src }) => (
+  <div dangerouslySetInnerHTML={{ __html: `
+    <video
+      muted
+      autoplay
+      loop
+      playsinline
+      src="${src}"
+    />
+  ` }}
+  />
+);
+
 const Home = () => {
 
   return ( 
@@ -110,9 +123,10 @@ const Home = () => {
           <VideoContainer>
             <H1Stretched>ASPHALT TANGO</H1Stretched>
             <Pred>Designer + Developer</Pred>
-            <video autoPlay muted loop>
-              <source src={ASPH} />
-            </video>
+            <VideoWorkaround
+                src={ASPH}
+              />
+
             <div>
               COMING SOON
             </div>
@@ -120,9 +134,9 @@ const Home = () => {
           <VideoContainer>
             <H1Stretched>CR004: PARTISAN</H1Stretched>
             <Pred>Developer</Pred>
-            <video autoPlay muted loop>
-              <source src={PARTISAN} />
-            </video>
+            <VideoWorkaround
+                src={PARTISAN}
+              />
             <div>
               <ButtonLink 
                 href='https://circadian-rhythms.com/cr004'
@@ -133,9 +147,10 @@ const Home = () => {
           <VideoContainer>
             <H1Stretched>Circadian Rhythms Website</H1Stretched>
             <Pred>Developer</Pred>
-            <video autoPlay muted loop>
-              <source src={CR2019} />
-            </video>
+            <VideoWorkaround
+                src={CR2019}
+              />
+
             <div>
               <ButtonLink 
                 href='https://circadian-rhythms.com'
@@ -146,9 +161,9 @@ const Home = () => {
           <VideoContainer>
             <H1Stretched>Last Japan Website</H1Stretched>
             <Pred>Designer & Developer</Pred>
-            <video autoPlay muted loop>
-              <source src={LASTJAPAN} />
-            </video>
+            <VideoWorkaround
+                src={LASTJAPAN}
+              />
             <div>
               <ButtonLink 
                 href='https://lastjapan.com'
@@ -159,9 +174,9 @@ const Home = () => {
           <VideoContainer>
            <H1Stretched>CR003: PLATA - LAST DAYZ</H1Stretched>
             <Pred>Developer</Pred>
-            <video autoPlay muted loop>
-              <source src={PARTISAN} />
-            </video>
+            <VideoWorkaround
+                src={CR003}
+              />
             <div>
               <ButtonLink 
                 href='https://circadian-rhythms.com/cr003'
