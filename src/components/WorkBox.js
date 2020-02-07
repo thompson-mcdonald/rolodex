@@ -107,10 +107,14 @@ class WorkBox extends React.Component {
               {this.props.project}
             </H1>
             <PredStretched>Role: {this.props.role}</PredStretched>
-            <ButtonLink 
+            {this.props.url && (
+              <ButtonLink 
               href={this.props.url}
               target="_blank"
-            >{this.props.buttonText}</ButtonLink>
+              >
+                {this.props.buttonText}
+              </ButtonLink>
+            )}
             <MouseToolTipBox
               visible={this.state.isMouseTooltipVisible}
               offsetX={5}

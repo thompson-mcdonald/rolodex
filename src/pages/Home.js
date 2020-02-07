@@ -179,11 +179,11 @@ const Home = () => {
           <PBold>RECENT WORK<br />
           (Hover to see video preview)</PBold>
           <WorkBox 
-            project='CR004: PARTISAN'
-            role='Developer'
+            project='ASPHALT TANGO'
+            role='Designer & Developer'
             videourl={ASPH}
             imageurl={FANFARE}
-            alt="partisan orb"
+            alt="fanfare ciocarlia stand in a field"
           />
           <WorkBox 
             project='CR004: PARTISAN'
