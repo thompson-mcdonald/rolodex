@@ -116,10 +116,7 @@ const Home = () => {
               <source src={ASPH} />
             </video>
             <div>
-              <ButtonLink 
-                href='https://circadian-rhythms.com/cr004'
-                target="_blank"
-              >VISIT</ButtonLink>
+              COMING SOON
             </div>
           </VideoContainer>
           <VideoContainer>
