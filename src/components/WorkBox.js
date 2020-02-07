@@ -31,17 +31,16 @@ const OuterBox = styled.div`
 
 `;
 
-const Video = styled.video`
-  height: 500px;
-  width: auto;
-
-  z-index: 500;
-
-  border: 2px solid #000;
-  box-shadow: 5px 5px 1px #000;
-
-  transform: all 2s;
-  transition: scale(1);
+const Video = styled.div`
+  video {
+    height: 500px;
+    width: auto;
+  
+    z-index: 500;
+  
+    transform: all 2s;
+    transition: scale(1);  
+  }
 `;
 
 const ImgBox = styled.div`
@@ -90,7 +89,7 @@ const VideoWorkaround = ({ src }) => (
     <video
       muted
       autoplay
-      playsinline
+      loop
       src="${src}"
     />
   ` }}
@@ -132,10 +131,11 @@ class WorkBox extends React.Component {
               offsetX={5}
               offsetY={5}
             >
+            <Video>
             <VideoWorkaround
               src={this.props.videourl}
             />
-              
+            </Video>
             </MouseToolTipBox>
           </OuterBox>
         <ImgBox>
