@@ -38,12 +38,10 @@ const P = styled.p`
 `;
 
 const H1StretchedFixed = styled(H1Stretched)`
-  position: fixed;
-  top: 80px;
-  left: 0;
   transform: scaleX(.8);
-  transform-direction: 0 0;
+  
   transition: transform 2s;
+  transform-origin: left center;
   &:hover {
     transform: scaleX(1);
     transition: transform 2s;
@@ -98,8 +96,8 @@ const Home = () => {
 
   return ( 
     <Layout>
-      <H1StretchedFixed>Jacob Thompson-McDonald</H1StretchedFixed>
       <Header>
+        <H1StretchedFixed>Jacob Thompson-McDonald</H1StretchedFixed>
         <P>I'm a Designer + Front End Developer with 6 years total experience. My last full-time position was Visual Lead at Release Platform. Since then I've been contracting, and working as a part of <A href="https://circadian-rhythms.com">Circadian Rhythms</A>, as website admin and developer.</P>
 
         <P>Email: jthompsonmcdonald [at] gmail [dot] com</P>
