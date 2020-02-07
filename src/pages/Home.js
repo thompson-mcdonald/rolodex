@@ -8,6 +8,8 @@ import CR2019 from '../cr2019.mp4';
 import CR003 from '../cr003.mp4';
 import LASTJAPAN from '../lastjapan.mp4';
 import TREE from '../tree-dl.png';
+import ASPH from '../asph.mp4';
+import FANFARE from '../fanfare.jpg';
 import '../index.css';
 
 const Layout = styled.div`
@@ -108,7 +110,20 @@ const Home = () => {
         <Mobile>
           <PBold>RECENT WORK</PBold>
           <VideoContainer>
-            <H1Stretched>CR004: PARTISAN'</H1Stretched>
+            <H1Stretched>ASPHALT TANGO</H1Stretched>
+            <Pred>Designer + Developer</Pred>
+            <video autoPlay muted loop>
+              <source src={ASPH} />
+            </video>
+            <div>
+              <ButtonLink 
+                href='https://circadian-rhythms.com/cr004'
+                target="_blank"
+              >VISIT</ButtonLink>
+            </div>
+          </VideoContainer>
+          <VideoContainer>
+            <H1Stretched>CR004: PARTISAN</H1Stretched>
             <Pred>Developer</Pred>
             <video autoPlay muted loop>
               <source src={PARTISAN} />
@@ -163,6 +178,13 @@ const Home = () => {
         <Desktop>
           <PBold>RECENT WORK<br />
           (Hover to see video preview)</PBold>
+          <WorkBox 
+            project='CR004: PARTISAN'
+            role='Developer'
+            videourl={ASPH}
+            imageurl={FANFARE}
+            alt="partisan orb"
+          />
           <WorkBox 
             project='CR004: PARTISAN'
             role='Developer'
