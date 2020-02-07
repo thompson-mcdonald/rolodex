@@ -85,6 +85,18 @@ const MouseToolTipBox = styled(MouseToolTip)`
   z-index: 8;
 `;
 
+const VideoWorkaround = ({ src }) => (
+  <div dangerouslySetInnerHTML={{ __html: `
+    <video
+      muted
+      autoplay
+      playsinline
+      src="${src}"
+    />
+  ` }}
+  />
+);
+
 class WorkBox extends React.Component {
   state = {
     isMouseTooltipVisible: false,
@@ -120,9 +132,10 @@ class WorkBox extends React.Component {
               offsetX={5}
               offsetY={5}
             >
-              <Video loop autoPlay muted>
-                <source src={this.props.videourl}></source>
-              </Video>
+            <VideoWorkaround
+              src={this.props.videourl}
+            />
+              
             </MouseToolTipBox>
           </OuterBox>
         <ImgBox>
