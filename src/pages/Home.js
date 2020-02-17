@@ -113,6 +113,10 @@ const Home = () => {
         <H1StretchedFixed>Jacob Thompson-McDonald</H1StretchedFixed>
         <P>I'm a Designer + Front End Developer with 6 years total experience. My last full-time position was Visual Lead at Release Platform. Since then I've been contracting, and working as a part of <A href="https://circadian-rhythms.com">Circadian Rhythms</A>, as website admin and developer.</P>
 
+        <P>In my career, I've designed digital apps for both the web & native. For clients in local government, all the way through to the music industry. </P>
+
+        <P>In my spare time, I'm usually learning how to use Ableton better</P>
+
         <P>Email: jthompsonmcdonald [at] gmail [dot] com</P>
 
         > <A href="https://github.com/thompson-mcdonald" target="_blank">Github</A>
