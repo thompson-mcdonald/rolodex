@@ -106,7 +106,7 @@ const VideoWorkaround = ({ src }) => (
 );
 
 const Home = () => {
-
+  console.log("If you're reading this, 👋. If you're hiring: please consider me! If you still haven't paid my invoice, please leave ✌️")
   return ( 
     <Layout>
       <Header>
